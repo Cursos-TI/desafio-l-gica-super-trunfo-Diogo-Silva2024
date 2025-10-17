@@ -105,15 +105,31 @@ int main() {
     // } else {
     //     printf("Cidade 2 tem maior população.\n");
     // }
+ 
 
-    
-
-    // Exibição dos Resultados:
+     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
 
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+
+    // --- Batalha Final: SUPER PODER (MAIOR vence) ---
+    printf("======================================================\n");
+    printf("--- Batalha Final: SUPER PODER ---\n");
+    
+    printf("  Super Poder de %s: %.4f\n", nomeCidade1, superPoder1);
+    printf("  Super Poder de %s: %.4f\n", nomeCidade2, superPoder2);
+    
+    printf("\n");
+    if (superPoder1 > superPoder2) {
+        printf("🎉 **VENCEDOR GERAL: Carta 1 (%s)** com o MAIOR Super Poder!\n", nomeCidade1);
+    } else if (superPoder2 > superPoder1) {
+        printf("🎉 **VENCEDOR GERAL: Carta 2 (%s)** com o MAIOR Super Poder!\n", nomeCidade2);
+    } else {
+        printf("🤝 **EMPATE GERAL** no Super Poder!\n");
+    }
+    printf("======================================================\n")
 
     return 0;
 }
