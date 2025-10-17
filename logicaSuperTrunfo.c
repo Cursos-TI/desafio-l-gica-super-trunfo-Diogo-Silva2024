@@ -32,6 +32,43 @@ int main() {
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
 
+    // Área para entrada de dados
+
+    // --- Coleta de dados para a primeira carta ---
+    printf("--- Cadastro da Carta 1 ---\n");
+    printf("Digite o estado (A-Z): ");
+    scanf(" %c", &estado1);
+    printf("Digite o código da carta (Ex: C01): ");
+    scanf("%s", codigo1);
+    printf("Digite o nome da cidade: ");
+    scanf(" %[^\n]", nomeCidade1);
+    printf("Digite a população: ");
+    scanf("%d", &populacao1);
+    printf("Digite a área em km²: ");
+    scanf("%f", &area1);
+    printf("Digite o PIB: ");
+    scanf("%f", &pib1);
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &pontosTuristicos1);
+
+        // --- Coleta de dados para a segunda carta ---
+    printf("\n--- Cadastro da Carta 2 ---\n");
+    printf("Digite o estado (A-Z): ");
+    scanf(" %c", &estado2);
+    printf("Digite o código da carta (Ex: C02): ");
+    scanf("%s", codigo2);
+    printf("Digite o nome da cidade: ");
+    scanf(" %[^\n]", nomeCidade2);
+    printf("Digite a população: ");
+    scanf("%d", &populacao2);
+    printf("Digite a área em km²: ");
+    scanf("%f", &area2);
+    printf("Digite o PIB: ");
+    scanf("%f", &pib2);
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &pontosTuristicos2);
+
+
     // Exemplo:
     // printf("Digite o código da cidade: ");
     // scanf("%s", codigo);
