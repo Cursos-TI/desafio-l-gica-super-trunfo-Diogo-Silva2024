@@ -79,12 +79,34 @@ int main() {
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
+    // --- COMPARAÇÃO DE TODOS OS ATRIBUTOS ---
+    printf("\n======================================================\n");
+    printf("  RESULTADOS: SUPER TRUNFO DE CIDADES\n");
+    printf("======================================================\n\n");
+    
+    // 1. População (Maior vence - 0)
+    exibir_comparacao("População", nomeCidade1, nomeCidade2, (float)populacao1, (float)populacao2, 0);
+
+    // 2. Área (Maior vence - 0)
+    exibir_comparacao("Área (km²)", nomeCidade1, nomeCidade2, area1, area2, 0);
+
+    // 3. PIB (Maior vence - 0)
+    exibir_comparacao("PIB (Bilhões R$)", nomeCidade1, nomeCidade2, pib1, pib2, 0);
+
+    // 4. Densidade Populacional (Menor vence - 1)
+    exibir_comparacao("Dens. Populacional", nomeCidade1, nomeCidade2, densidadePopulacional1, densidadePopulacional2, 1); 
+
+    // 5. PIB per capita (Maior vence - 0)
+    exibir_comparacao("PIB per capita", nomeCidade1, nomeCidade2, pibPerCapita1, pibPerCapita2, 0);
+
     // Exemplo:
     // if (populacaoA > populacaoB) {
     //     printf("Cidade 1 tem maior população.\n");
     // } else {
     //     printf("Cidade 2 tem maior população.\n");
     // }
+
+    
 
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
